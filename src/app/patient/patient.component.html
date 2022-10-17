@@ -1,0 +1,27 @@
+<div>
+    <h2>Add Patient</h2>
+    <form [formGroup]="patientRef" (ngSubmit)="storePatient()">
+        
+        <label>PName</label>
+        <input type="text" formControlName="pname"><br/>
+        <label>PGender</label>
+        <input type="text" formControlName="pgender"><br/>
+        
+        <label>PAddress</label>
+        <input type="text" formControlName="paddress"><br/>
+        <label>Symptoms</label>
+        <input type="text" formControlName="symptoms"><br/>
+        <label>EmailId</label>
+        <input type="text" formControlName="emailid"><br/>
+        <label>Mobile</label>
+        <input type="number" formControlName="mobile"><br/>
+        <input type="submit" value="Book Appointment"/><br/>
+        
+        <input type="reset" value="reset"/><br/>
+       
+    </form><br/>
+    <span style="color:red">{{storeMsg}}</span>
+</div>
+
+
+
